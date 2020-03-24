@@ -16,7 +16,7 @@ var listaOrdinata = listaFesta.sort();
 console.log(listaOrdinata);
 
 // variabile che salva la posizione del cognomeUtente
-var posizione;
+var posizione = listaFesta.indexOf(cognomeUtente);
 
 
 
@@ -28,11 +28,11 @@ for (var i = 0; i < listaOrdinata.length; i++) {
 contenutoPrecedente = document.getElementById('ciao').innerHTML;
 // creare output che stampa la lista di cognomi ordinata alfabeticamente
 document.getElementById('ciao').innerHTML = contenutoPrecedente + " " + invitatiN;
-if ( cognomeUtente === listaOrdinata[i] ) {
-  posizione = i +1;
-  console.log(posizione);
-
-}
+// if ( cognomeUtente === listaOrdinata[i] ) {
+//   posizione = i ;
+//   console.log(posizione);
+//
+// }
 }
 console.log("la posizione del tuo cognome è :" + posizione);
 
